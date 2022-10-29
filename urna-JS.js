@@ -122,3 +122,4 @@ function vt(){
     votos.innerText = "Votos restantes:"+nada
 }
 setInterval(vt,100)
+end
