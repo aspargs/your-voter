@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleições 2022</title>
+    <style>
+        .button-confirm{ width: 14vw; height: 5.4vw;background: #0bc80b; border: 0.1vw solid black; border-radius: 5px;}
+        .button-recorrect{ width: 17vw; height: 5.4vw;background: #f6a40d; border: 0.1vw solid black; border-radius: 5px;}
+        .button-null{width: 17vw; height: 5.4vw; border: 0.1vw solid black; border-radius: 5px; margin: 6vw}
+        #number1{width: 7vw; height: 7vw; border: 0.2vw solid black;}
+        #number2{width: 7vw; height: 7vw; border: 0.2vw solid black;}
+        .pos-buttons{margin: 5px auto auto 24vw }
+        .numbers{margin: auto 0px 0vw 41vw;}
+        .numbers > img {width: 5vw; position: relative; top: 17px}
+        .title{font-size: 4.6vw; margin: auto auto 5px 40vw}
+        .candidato, .candidato2{margin: auto auto auto 23vw}
+        #candidato2{margin: auto auto auto 23vw}
+        .partido, .partido2{margin: auto auto auto 23vw}
+        .ladrao{width: 28vw; margin-left: 37vw;}
+        .ladrao2{margin-left: 42vw; width: 12vw;}
+        #b{width: 11vw; margin-left: 44vw;}
+        .fim{ position: absolute; top:20vw; left:39vw}
+        .apu{font-size: 5vw; position:relative; right: 13vw;}
+        .totalLula, .totalBolso{position: relative; top: -49vw; left: 13vw; font-size: 3.7vw;}
+        .err{position: relative; top: 13vw; left: 23vw}
+    </style>
+</head>
+<body>
+<div style="height: 16vw;">
+    <img src="urna/índice.jpg" alt="" style="width: 29vw">
+    <h1 style="font-size: 4vw; position: relative; top: -17vw; left: 25vw;">Tribunal Superior Eleitoral</h1>
+    <p style="position: relative; top: -20vw; left: 25vw;">Votação</p>
+</div>
+    <h1 class="title dell">Presidente</h1>
+    <p class="err" id="err"></p>
+    <p id="vts">a</p>
+<div id="candidatos">
+    <div class="foto dell">
+        <img class="ladrao dell" src="">
+    </div>
+    <div class="name dell">
+        <p class="candidato dell"></P>
+        <p class="partido dell"></P>
+    </div>
+    <div class="foto2 dell">
+        <img class="ladrao2 dell" src="">
+    </div>
+    <div class="name2 dell">
+        <p class="candidato2 dell" id="candidato2"></P>
+        <p class="partido2 dell"></P>
+    </div>
+</div>
+    <div class="numbers dell">
+        <input type="text" name="" id="number1" class="dell" onchange="mudou()" >
+        <input type="text" name="" id="number2" class="dell" onchange="mudou()" >
+    </div>
+
+    <div class="pos-buttons">
+        <!--<button class="button-recorrect dell" onclick="Corrigir()"><B>Corrigir</B></button>-->
+        <button class="button-null dell" onclick="anular()"><B>Branco</B></button>
+        <button class="button-confirm dell" onclick="confirmar()"><b>Votar</b></button>
+    </div>
+    <h1 class="fim"></h1>
+    <p class="totalLula" id="totalLula"></p>
+    <p class="totalBolso" id="totalBolso"></p>
+    <script src="aula-12/jquery.js" type="text/javascript"></script>
+    <script src="urna-JS.js" type="text/javascript"></script>
+</body>
+</html>
